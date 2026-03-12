@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 import os
 
 load_dotenv()
+google_api_key = st.secrets.get("GOOGLE_API_KEY") or os.getenv("GOOGLE_API_KEY")
 
 st.set_page_config(page_title="Aylas Anime Recommendation Bot", page_icon=":tv:", layout="centered")
 st.title("Aylas Anime Recommendation Bot")
