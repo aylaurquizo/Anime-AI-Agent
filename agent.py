@@ -36,5 +36,4 @@ while True:
         print(response["output"])
         print()
     except Exception as e:
-        print(f"\nSomething went wrong: {e}\n")
-        print("Try rephrasing your question!\n")
+        answer = f"Error: {str(e)}"
